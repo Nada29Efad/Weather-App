@@ -1,0 +1,171 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="all.min (2).css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-blue">
+        <div class="container-fluid">
+            <div class="my-icon d-flex gap-3">
+                <div>
+                  <img src="Photos/logo2x.png" class="nav-img" alt="logo"/>
+                </div>
+                <div class="d-flex flex-column">
+                  <a class="navbar-brand fs-6 fw-bold p-0 text-white" href="#">Weather</a>
+                  <a class="navbar-brand fs-10 p-0 tagline" href="#">tagline goes here</a>
+                </div>
+            </div>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-5">
+              <li class="nav-item">
+                <a class="nav-link active px-4 py-1" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4 py-1" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4 py-1" href="#">Live cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4 py-1" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-4 py-1" href="#">contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+
+    <div class="header bg-blue" style="background-image: url(Photos/banner.png); background-repeat: no-repeat;">
+      <div class="container py-5">
+        <form class="position-relative mb-5">
+          <input type="search" placeholder="Find your location..." class="text-black search form-control mb-3 position-relative" >
+          <button class="button position-absolute text-white">Find</button>
+        </form>
+        
+        <div class="row row-cols-md-3 g-0">
+          <div>
+            <div class="inner primary-color h-100 overflow-hidden">
+              <div class="dateSection d-flex justify-content-between px-2 py-3 primary2-color">
+                <h1 class="today fs-14 mb-0 text-capitalize fw-normal">saturday</h2>
+                <h1 class="fs-14 mb-0 fw-normal">
+                  <span class="dayNum">12</span>
+                  <span class="todayMonth">October</span>
+                </h2>
+              </div>
+              <div class="px-3 py-4">
+                <h2 class="firstDayLocation text-capitalize fs-5 fw-normal">cairo</h2>
+                <h3 class=" fs-90 text-white fw-bold mb-3"><span class="firstDayDeg">28.4</span>&deg;C</h3>
+                <img class="firstDayImg" src="./images/113.png"/>
+                <h4 class="firstDayDesc text-capitalize fw-normal main-color fs-14 mb-4 mt-2">clear</h4>
+                <div class="d-flex gap-lg-5 gap-1">
+                  <div class="d-flex gap-1 text-wrap">
+                    <i class="fa-solid fa-umbrella"></i>
+                    <p class="fs-14"><span class="firstDayHumidity">20</span>%</p>
+                  </div>
+                  <div class="d-flex gap-1 text-wrap">
+                    <i class="fa-solid fa-wind"></i>
+                    <p class="fs-14"><span class="firstDayWind">18</span>km/h</p>
+                  </div>
+                  <div class="d-flex gap-1 text-wrap">
+                    <i class="fa-solid fa-compass"></i>
+                    <p class="firstDayWindDir fs-14">East</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="inner secondary-color h-100 overflow-hidden" >
+              <div class="dateSection d-flex justify-content-center px-2 py-3 secondary2-color">
+                <h1 class="nextDay fs-14 mb-0 fw-normal text-capitalize">monday</h2>
+              </div>
+              <div class="px-3 py-4 d-flex flex-column justify-content-center align-items-center ">   
+                <img src="Photos/113.png" class="nextDaysImg mb-4" />
+                <h3 class="fs-4 text-white fw-bold mb-2"><span class="nextDaysMaxDeg">33.6</span>&deg;C</h1>
+                <h3 class="fs-6 fw-normal mb-3"><span class="nextDaysMinDeg">23.8</span>&deg;C</h1>
+                <h4 class="nextDaysDesc text-capitalize fw-normal main-color fs-14 mb-4 mt-2">sunny</h4>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="inner primary-color h-100 overflow-hidden" >
+              <div class="dateSection d-flex justify-content-center px-2 py-3 primary2-color">
+                <h1 class="nextDay fs-14 mb-0 fw-normal text-capitalize">monday</h2>
+              </div>
+              <div class="px-3 py-4 d-flex flex-column justify-content-center align-items-center ">   
+                <img src="./images/113.png" class="nextDaysImg mb-4" />
+                <h3 class="fs-4 text-white fw-bold mb-2"><span class="nextDaysMaxDeg">33.6</span>&deg;C</h1>
+                <h3 class="fs-6 fw-normal mb-3"><span class="nextDaysMinDeg">23.8</span>&deg;C</h1>
+                <h4 class="nextDaysDesc text-capitalize fw-normal main-color fs-14 mb-4 mt-2">sunny</h4>
+              </div>
+            </div>
+          </div>         
+        </div>
+      </div>
+    </div>
+
+
+    <div class="footer secondary-color py-5">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-md-8">
+            <form class="position-relative mb-4">
+              <input type="search" placeholder="Enter your email to subscribe..." class="form-control text-dark mb-3 position-relative" >
+              <button class="button position-absolute text-white py-1 px-4">Subscribe</button>
+            </form>
+          </div>
+          <div class="col-md-4 d-flex gap-1 justify-content-center">
+            <div class="social-icons rounded-circle d-flex justify-content-center align-items-center">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+            <div class="social-icons rounded-circle d-flex justify-content-center align-items-center">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div class="social-icons rounded-circle d-flex justify-content-center align-items-center">
+              <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+            </div>
+            <div class="social-icons rounded-circle d-flex justify-content-center align-items-center">
+              <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+            
+
+          </div>
+          <div>
+            <p class="bg-transparent text-light">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+          </div>
+       
+    </div>
+
+    
+
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
